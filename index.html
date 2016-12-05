@@ -1,0 +1,89 @@
+<!--
+
+index.html
+
+Computer Science 50
+Final Project
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>biopresto73 - Final Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- http://getbootstrap.com/ -->
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- app's own CSS -->
+  <link href="css/styles.css" rel="stylesheet"/>
+
+  <!-- http://jquery.com/ -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+
+  <!-- http://getbootstrap.com/ -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- http://underscorejs.org/ -->
+  <script src="js/underscore-min.js"></script>
+
+  <!-- app's own JavaScript -->
+  <!--<script src="/js/scripts.hacker.js"></script>-->
+  <script src="js/game.js"></script>
+
+  <!-- Load Google fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Eczar|Gentium+Basic" rel="stylesheet">
+
+<!--
+  link to online resources
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+-->
+</head>
+<body>
+
+<div class="container">
+  <h1 class="title" style="text-align: center;"><strong>Road to 100s</strong></h1>
+  <hr />
+  <div class="row">
+        <div class="col-sm-8 col-md-8">
+          <div class="row">
+            <div id="winner" class="winner_text">Winner!</div>
+              <table class="table-bordered" id="mainboard"></table>
+              <br />
+          </div>
+          <div class="row">
+              <button type="button" class="btn btn-primary btn-md btn-block" id="game_reset">Reset</button>
+              <button type="button" class="btn btn-success btn-md btn-block" id="play_mode"></button>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <h3>Score <span id="score_placeholder" class="score">0</span></h3>
+          
+          <h3>High Scores:</h3>
+          <span id="highs"></span>
+          <h3>Instructions:</h3>
+          <ul>
+            <li>Click on any square of the grid to start.</li>
+            <li>Next move is 2 squares away, in horizontal or vertical; 1 square in diagonal.</li>
+            <li>The goal is to fill the grid with all numbers up to 100.</li>
+            <li>The game ends when no more moves are possible.</li>
+          </ul>
+          <p id="disclaimer">Cookies used to store moves and high scores.</p>
+        </div>
+  </div>
+  <hr />
+  <small>A game by Roberto Piga ( rpiganet at gmail.com ) made for CS50X ( https://cs50.tv/ ) .</small>
+</div>
+
+<!--
+avoid "Cannot read property 'getElementByTagName' of null()" error
+https://webcache.googleusercontent.com/search?q=cache:b6ahjNHygIMJ:https://forums.lastpass.com/viewtopic.php%3Ff%3D14%26t%3D232045+&cd=1&hl=it&ct=clnk&gl=it
+-->
+<input type="hidden">
+</body>
+</html>
