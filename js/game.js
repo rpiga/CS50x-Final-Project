@@ -1,5 +1,5 @@
 /**
- * game.hacker.js
+ * game.js
  *
  * Computer Science 50
  * Final Project
