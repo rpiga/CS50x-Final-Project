@@ -1,0 +1,110 @@
+/**
+ * styles.css
+ * 
+ * Computer Science 50
+ * 
+ * Final Project
+**/
+
+html, body
+{
+    height: 100%;
+    font-family: 'Gentium Basic', "Times New Roman", Times, serif;
+    font-size: 1.2em;
+    color: #050500;
+    background-color: Cornsilk;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Eczar', Verdana, Geneva, sans-serif;
+}
+
+h1
+{
+    text-shadow: 2px 2px darkred;
+}
+
+hr 
+{
+	border-top: 1px dotted #050500;
+}
+
+
+#mainboard
+{
+    background-color: Ivory;
+    border: 0px;
+    margin:0 auto;
+}
+
+#mainboard tr
+{
+    height: 20px;
+    /*display: block;*/
+    
+}
+
+#mainboard td
+{
+    text-align: center;
+    margin: auto;
+    height: 40px;
+    width: 40px;    
+}
+
+.score
+{
+    font-family: 'Gentium Basic', "Times New Roman", Times, serif;
+    margin: 0 auto;
+    color: crimson;
+    font-weight: bold;
+    text-shadow: 1px 1px darkred;
+}
+
+.title
+{
+    color: crimson;
+}
+
+.highlit
+{
+    background-color: PaleGoldenrod;
+}
+
+.cell
+{
+    background-color: Ivory;
+}
+
+.blink
+{
+    background-color: LightCoral;
+}
+
+.overlay
+{
+    z-index: 9999;
+}
+
+.value
+{
+    color: crimson;
+    text-shadow: 1px 1px darkred;
+    font-weight: bold;
+}
+
+.winner_text
+{
+    visibility: hidden;
+    border:1px;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    color: crimson;
+    text-shadow: 1px 1px darkred;
+}
