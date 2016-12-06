@@ -1,5 +1,5 @@
 /**
- * game.js
+ * game.hacker.js
  *
  * Computer Science 50
  * Final Project
@@ -256,7 +256,7 @@ function cpu_move (start)
         //console.log("CHECKING " + choices[i]);
      
         var t_score = minimax(choices[i], -99999, 99999, 0, true);
-        console.log(choices[i] + "\t >" + t_score);
+        //console.log(choices[i] + "\t >" + t_score);
         
         if (t_score > best_score)
         {
@@ -349,7 +349,7 @@ function minimax(n, alpha, beta, depth, isMax)
         // add value in the list of performed (simulated) moves
         cpu_moves_list.push(item);
         
-        console.log(depth + "\t" + n + "\t" + alpha + '\t' + beta + "\t" + isMax + "\t" + cpu_moves_list)
+        // console.log(depth + "\t" + n + "\t" + alpha + '\t' + beta + "\t" + isMax + "\t" + cpu_moves_list)
         
         // retrieve score recursively by increasing depth and switching if we're in a Max or min node
         var score = minimax(item, alpha, beta, depth + 1, (isMax === true) ? false : true);
@@ -357,7 +357,7 @@ function minimax(n, alpha, beta, depth, isMax)
         // after evaluation, pop value out from simulated moves list
         cpu_moves_list.pop();
         
-        console.log("\t- " + depth + "\t" + n + "\t" + isMax + "\t" + alpha +"\t" + beta +"\t" + score);
+        // console.log("\t- " + depth + "\t" + n + "\t" + isMax + "\t" + alpha +"\t" + beta +"\t" + score);
         
         if (isMax) // we're in a Max node (CPU)
         {
