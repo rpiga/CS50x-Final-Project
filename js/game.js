@@ -103,7 +103,7 @@ $(function()
     
     if (G != 10)
     {
-        $("#title").text("Road to " + (G *G) +"!!");
+        $("#game_title").html("Road to " + (G *G) +"!!");
     }
     
     // monitor clicks on cells
