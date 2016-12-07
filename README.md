@@ -13,7 +13,7 @@
 > In Vs. CPU mode, it should be a simple random choice, so it actually does not make sense to have CPU starting first
 
 * A couple of additional features are hidden (almost) in the code.
-* This was actually an old pen & paper game I'm used to play. I'm not able to find its original name, so I simply called this "**Road to 100**"
+* This is actually an old pen & paper game I'm used to play. I'm not able to find its original name, so I simply called this "**Road to 100**"
 
 Have fun.
 
