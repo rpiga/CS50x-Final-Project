@@ -101,6 +101,11 @@ $(function()
         }
     }
     
+    if (G != 10)
+    {
+        $("#title").text("Road to " + (G *G) +"!!");
+    }
+    
     // monitor clicks on cells
     $("#mainboard").on("click", "td", function(e) {
         // slice cel id and assign it to a variable
